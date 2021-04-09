@@ -23,7 +23,7 @@ class QRSize {
 class QRCode {
   List<int> _data = <int>[];
   List<int> get data => _data;
-  List<int> _gbkText;
+  late List<int> _gbkText;
 
   QRCode(QRSize size, PosAlign align, String text){
     _data += size.value;
